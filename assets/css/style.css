@@ -649,7 +649,7 @@ input:-ms-input-placeholder {
 }
 .project-content{
     position:absolute;
-    left:32%;
+    left:40%;
     bottom:-100%;
     color:#fff;
     transition:.5s;
