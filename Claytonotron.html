@@ -1,0 +1,50 @@
+<div style="text-align: left">    
+    <img src="images/cover.png" style = "max-width: 100%">
+    <!--<h1>About</h1>-->
+    <h1 style = "text-align:center">The Claytonotron</h1>
+    <p>So I got myself a Korg Monotron for Christmas, but after a few hours of messing around, I decided that it was super cool, but not very musical.</p>
+    <p>Ideally, I wanted to be able to use this thing in the studio, but the lack of stepped pitch control (notes are played on a ribbon) and the inability to 
+		sync the LFO to a bpm meant that it was tough to make anything worth listening to.</p>
+    <p>And so my poor Monotron sat unused for months until I stumbled upon Marc Nostromo's Nostromotron mod 
+		<a href="https://www.marc-nostromo.com/midi-control-for-the-monotron-using-a-teensy-3-0/" >here</a> and got inspired.</p>
+    <br>
+	<h3>Criteria</h3>
+		<ul>
+			<li>some way to sync the LFO to a bpm</li>
+			<li>plug-and-play MIDI control</li>
+			<li>preserve all original functionality</li>
+		</ul>
+	<br>
+	<h3>The LFO</h3>
+	<p>Found <a href="http://houshu.at.webry.info/">this mod</a> while digging around reddit, but it may be a little confusing if you can't read kanji.</p>
+	<p>Essentially, you're using a diode to prevent voltage buildup from retriggering the LFO normally, creating an envelope.</p>
+	<p><i>In the synth world, an envelope is simply an LFO that doesn't retrigger.</i></p>
+	<p>You can also toggle between LFO and ENV behavior by adding a switch, preserving the original functionality but allowing some control of the rate. Neat! 
+		Here's the schematic:</p>
+		<center><img src="images/monotron/monotron_lfo.png" style="max-width: 66%"></center>
+	<br>
+	<p>Start by soldering a wire to each of the VCC and LFO pads:</p>
+	<center><img src="images/monotron/solder_points.jpg" style="max-width: 66%"></center>
+	<p>If you want to be able to toggle between LFO and ENV modes, include a switch between the LED and the monotron, like in the schematic. Otherwise you can 
+		just solder the LFO wire to the ground leg of the LED, and then the VCC wire to the positive leg of the LED.</p>
+	<p>Bam, all done.</p>
+	
+	<h3>MIDI control</h3>
+		<p>This is the bread and butter of this build. It was definitely not easy to figure out, but thankfully you have me!</p>
+		<p>After a little research, I chose the Teensy for an MCU because of it's built-in class compliant MIDI mode. This means that 
+			you can plug it into any computer and it'll be recognized as a MIDI instrument with no setup required. This is great because there's no messing with MIDI-yoke
+			which, in my humble opinion, is unbearably shitty.</p>
+		<p>I'll add some schematics here later.</p>
+		
+	<h3> Materials </h3>
+		<ul>
+			<li>teensy 3.0 or later</li>
+			<li>resistor kit</li>
+			<li>two 10nF ceramic capacitors</li>
+			<li>stripboard</li>
+			<li>soldering kit</li>
+			<li>an MCP4822</li>
+			<li>an LED </li>
+		</ul>
+	<p><i>last edit Nov 17, 2017<i></p>
+</div>
