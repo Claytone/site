@@ -451,6 +451,7 @@ input:-ms-input-placeholder {
     background-color:#303030;
     border-color:0;
     height:95px;
+	padding-top:15px;
 }
 
 .navbar {
@@ -475,6 +476,10 @@ input:-ms-input-placeholder {
     background-color:transparent;
     border-bottom:3px solid #314190;
     color:#fff;
+}
+
+.logobrand {
+	opacity: 0.15;
 }
 
 /*For Home Section*/
