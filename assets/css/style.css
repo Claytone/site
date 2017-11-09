@@ -566,6 +566,10 @@ input:-ms-input-placeholder {
     margin-top: 15px;
 }
 
+.project-contents p{
+	color: #303030;
+}
+
 /*For Skill Area*/
 
 .skill-bg{
