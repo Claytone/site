@@ -26,10 +26,14 @@ jQuery(document).ready(function ($) {
         }
     });
 
-	$("#bs-example-navbar-collapse-1").click(function() {
-		$(this).parents('.container').find(".navbar-toggle").trigger("click");
-		$("#bs-example-navbar-collapse-1").attr("aria-expanded", "false");
-	});
+	// $('#bs-example-navbar-collapse-1').on('click touchstart',(function() {
+		// alert("howdy");
+		// $("#burger").trigger('click');
+	// });
+	$('#bs-example-navbar-collapse-1').on('click touchend', (function(){
+		$(this).collapse('toggle');
+	}));
+	
     /*---------------------------------------------*
      * Easy Pie Chart
      ---------------------------------------------*/
