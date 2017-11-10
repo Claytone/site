@@ -26,7 +26,10 @@ jQuery(document).ready(function ($) {
         }
     });
 
-
+	$("#bs-example-navbar-collapse-1").click(function() {
+		$(this).parents('.container').find(".navbar-toggle").trigger("click");
+		$("#bs-example-navbar-collapse-1").attr("aria-expanded", "false");
+	});
     /*---------------------------------------------*
      * Easy Pie Chart
      ---------------------------------------------*/
