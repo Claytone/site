@@ -451,7 +451,6 @@ input:-ms-input-placeholder {
     background-color:#303030;
     border-color:0;
     height:95px;
-	padding-top:15px;
 }
 
 .navbar {
@@ -482,6 +481,10 @@ input:-ms-input-placeholder {
 	opacity: 0.15;
 }
 
+/* collapse thing. comment this out to toggle it */
+#bs-example-navbar-collapse-1{
+	margin-top: 27px;
+}
 /*For Home Section*/
 
 .home{
