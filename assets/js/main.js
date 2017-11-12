@@ -30,9 +30,9 @@ jQuery(document).ready(function ($) {
 		// alert("howdy");
 		// $("#burger").trigger('click');
 	// });
-	$('#bs-example-navbar-collapse-1').on('click touchend', (function(){
+	/* $('#bs-example-navbar-collapse-1').on('click touchend', (function(){
 		$(this).collapse('toggle');
-	}));
+	})); */
 	
     /*---------------------------------------------*
      * Easy Pie Chart
