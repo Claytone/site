@@ -113,16 +113,27 @@
 						<p>After a little research, I chose the Teensy for an MCU because of it's built-in class compliant MIDI mode. This means that 
 							you can plug it into any computer and it'll be recognized as a MIDI instrument with no setup required. This is great because there's no messing with MIDI-yoke
 							which, in my humble opinion, is unbearably shitty.</p>
-						<p>I'll finish this section later.</p>
 					<br>
 					<h3> Materials </h3>
-						<li>teensy 3.0 or later</li>
-						<li>resistor kit</li>
-						<li>two 10nF ceramic capacitors</li>
+						<li>Teensy 3.0 or later (about $20)</li>
+						<li>2.7k&#8486; resistor</li>
+						<li>22k&#8486; resistor</li>
+						<li>10nF ceramic capacitor</li>
 						<li>stripboard</li>
 						<li>soldering kit</li>
-						<li>an MCP4822</li>
+						<li>an <a href="https://www.digikey.com/product-detail/en/microchip-technology/MCP4822-E-P/MCP4822-E-P-ND/951465">MCP4822</a> ($3.15)</li>
 						<li>an LED </li>
+					<br>					
+					<p>We need to find a way to give an analog voltage to the monotron in order to control 
+					the pitch. While the Teensy has a PWM output, the resolution actually isn't 
+					good enough to play the pitches we need accurately, so we'll use an 
+					<a href="https://www.digikey.com/product-detail/en/microchip-technology/MCP4822-E-P/MCP4822-E-P-ND/951465">mcp4822</a>
+					. Be sure to buy the one pointed to by the link and not the PCB version (like I did, woops).
+					</p>
+					<p>Solder it up like this: </p>
+					<center><img src="../assets/images/monotron/wiring diagram.png" style="max-width: 66%"></center>
+					<br>
+					<p>I'll be uploading the source code soon.</p>
 				</div>
 				</div>
 			</div>
@@ -203,7 +214,6 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <!-- <div class="footer-last-content">
                         <h4>Our Address</h4>
-                        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta </p>
 
                         <div class="contact-info">
                             <p><i class="fa fa-map-marker"></i>Moonshine St. 14/05 Light</p>
@@ -217,7 +227,7 @@
 
             </div>
         </div>
-		<p style = "text-align:center">last edit Nov 9, 2017</p>
+		<p style = "text-align:center">last edit Nov 14, 2017</p>
 
     </footer>
 	
