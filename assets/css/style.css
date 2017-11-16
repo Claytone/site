@@ -573,6 +573,16 @@ input:-ms-input-placeholder {
 	color: #303030;
 }
 
+/* for the blog area */
+.blog-header{
+	text-align:center;
+}
+
+.blog-date{
+	color: #303030;
+	font-size: 16px;
+}
+
 /*For Skill Area*/
 
 .skill-bg{
