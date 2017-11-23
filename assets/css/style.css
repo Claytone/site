@@ -1047,7 +1047,7 @@ input:-ms-input-placeholder {
 }
 .cd-timeline-content .cd-date {
     float: left;
-    padding: 2.8em 0;
+    padding: 0.8em 0;
     opacity: .7;
 }
 .cd-timeline-content::before {
