@@ -1041,12 +1041,13 @@ input:-ms-input-placeholder {
     color: white;
     border-radius: 0.25em;
 }
+
 .no-touch .cd-timeline-content .cd-read-more:hover {
     background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
     float: left;
-    padding: .8em 0;
+    padding: 2.8em 0;
     opacity: .7;
 }
 .cd-timeline-content::before {
