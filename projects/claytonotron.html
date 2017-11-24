@@ -18,6 +18,9 @@
 
         <!--For Plugins external css-->
         <link rel="stylesheet" href="../assets/css/plugins.css" />
+		
+		<!--For lightbox external css-->
+        <link rel="stylesheet" href="../assets/css/lightbox.css" />
 
         <!--Theme custom css -->
         <link rel="stylesheet" href="../assets/css/style.css">
@@ -99,17 +102,71 @@
 					<!-- <p><i>In the synth world, an envelope is simply an LFO that doesn't retrigger.</i></p> -->
 					<p>You can also toggle between LFO and ENV behavior by adding a switch, preserving the original functionality but allowing some control of the rate. Neat! 
 						Here's the schematic:</p>
-						<center><img src="../assets/images/monotron/monotron_lfo.png" style="max-width: 66%"></center>
+						
+						<!-- LFO schem -->
+						<div class="container gal-container">
+							<div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+								<div class="box">
+									<a href="#" data-toggle="modal" data-target="#1">
+									  <center><img src="../assets/images/monotron/monotron_lfo.png" style="max-width: 66%"></center>
+									</a>
+									<div class="modal fade" id="1" tabindex="-1" role="dialog">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+										  <div class="modal-body">
+											<img src="../assets/images/monotron/monotron_lfo.png">
+										  </div>
+										  <!-- <div class="col-md-12 description"> -->
+										    <!-- <h4>Image credit http://houshu.at.webry.info/</h4> -->
+										  <!-- </div> -->
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- <center><img src="../assets/images/monotron/monotron_lfo.png" style="max-width: 66%"></center> -->
 					<br>
-					<p>Start by soldering a wire to each of the VCC and LFO pads:</p>
-					<center><img src="../assets/images/monotron/solder_points.jpg" style="max-width: 66%"></center>
+					<p>Start by soldering a wire to each of the VCC and LFO pads on the red dots below:</p>
+					<!-- <center><img src="../assets/images/monotron/solder_points.jpg" style="max-width: 66%"></center> -->
+					
+					
+						<!-- LFO solder points -->
+						<div class="container gal-container">
+							<div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+								<div class="box">
+									<a href="#" data-toggle="modal" data-target="#2">
+									  <center><img src="../assets/images/monotron/solder_points.jpg" style="max-width: 66%"></center>
+									</a>
+									<div class="modal fade" id="2" tabindex="-1" role="dialog">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+										  <div class="modal-body">
+											<img src="../assets/images/monotron/solder_points.jpg">
+										  </div>
+										  <div class="col-md-12 description">
+										    <h4>Image credit <a href="http://www.dinsync.info/2010/06/how-to-modify-korg-monotron.html" target="blank">here </a></h4>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					
+					
 					<br>
 					<p>If you want to be able to toggle between LFO and ENV modes, include a switch between the LED and the monotron, like in the schematic. Otherwise you can 
 						just solder the LFO wire to the ground leg of the LED, and then the VCC wire to the positive leg of the LED.</p>
 					<p>Bam, all done.</p>
 					<br>
 					<h3>MIDI control</h3>
-						<p>This is the bread and butter of this build. It was definitely not easy to figure out, but thankfully you have me!</p>
+						<!-- <p>This is the bread and butter of this build.</p> -->
 						<p>After a little research, I chose the Teensy for an MCU because of it's built-in class compliant MIDI mode. This means that 
 							you can plug it into any computer and it'll be recognized as a MIDI instrument with no setup required. This is great because there's no messing with MIDI-yoke
 							which, in my humble opinion, is unbearably shitty.</p>
@@ -217,7 +274,7 @@
 
             </div>
         </div>
-		<p style = "text-align:center">last edit Nov 9, 2017</p>
+		<p style = "text-align:center">last edit Nov 24, 2017</p>
 
     </footer>
 	
