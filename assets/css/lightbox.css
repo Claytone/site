@@ -98,7 +98,7 @@ body{
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-    top: 40%; 
+    top: 30%; 
     opacity: 0;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
